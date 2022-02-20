@@ -1,38 +1,87 @@
+body {
+  background-color: #73648a;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  padding: 20px;
+  list-style: none;
+}
+.jaquette {
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  max-width: 250px;
+  border-radius: 10px;
+  /* box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.46);
+  border: 1px solid black; */
+  background-color: #453750;
+  padding: 10px;
+  list-style: none;
+}
+.portrait {
+  border-radius: 67% 33% 33% 67% / 42% 50% 50% 58%;
+}
+.container .cards .card h2 {
+  color: #a393bf;
+}
+.container .cards .card p {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+a:-webkit-any-link {
+  text-decoration: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  border-radius: 30px;
+}
+.formCompo {
+  width: 100%;
+}
+form {
+  margin-left: auto;
+  margin-right: auto;
+}
+.bar {
+  width: 300px;
+  height: 30px;
+  border: none;
+  margin: 10px;
+}
+.searchBtn {
+  width: 75px;
+  height: 30px;
+  border: none;
+  margin: 10px;
+}
+nav ul {
+  width: 600px;
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav ul li {
+  width: 200px;
+  color: white;
+  font-size: 30px;
+}
+a:-webkit-any-link {
+  color: white;
+}
+.fav {
+  font-size: 30px;
+  cursor: pointer;
 }
